@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Tooltip</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome.5.7.2.css">
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: white url("img/image5.jpeg");
+        }
+        .tooltip_btn{
+            background: white url("img/image3.jpeg") no-repeat scroll center;
+            padding: 16px 45px;
+            box-shadow: 0 0 10px white;
+            font-size: 20px;
+            width: 250px;
+            border-radius: 15px;
+        }
+        .tooltip_btn{
+            box-shadow: 0 0 10px white;
+            color:black;
+            outline: none;
+            border: none;
+        }
+        .tooltip_btn:hover{
+            background-color: darkred;
+            color: darkviolet;
+        }
+        .tooltip_text{
+            background: white url("img/image4.jpeg");
+            color: blue;
+            width: 250px;
+            padding: 16px 35px;
+            font-size: 22px;
+            border-radius: 25px;
+            display: none;
+        }
+        .tooltip:hover .tooltip_text{
+            display: block;
+        }
+        .tooltip_text:hover{
+            background-color: darkred;
+            color: darkviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="tooltip">
+        <button class="tooltip_btn"><i class="fa fa-spinner fa-spin"></i> Hover Me <i class="fa fa-caret-down"></i></button>
+        <p class="tooltip_text">You hover on Me ?</p>
+    </div>
+
+</body>
+</html>
